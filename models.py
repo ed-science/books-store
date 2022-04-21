@@ -14,7 +14,7 @@ class Book(db.Model):
         self.published = published
 
     def __repr__(self):
-        return '<id {}>'.format(self.id)
+        return f'<id {self.id}>'
 
     def serialize(self):
         return {
